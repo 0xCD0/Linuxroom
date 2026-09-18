@@ -3,7 +3,7 @@
 set -Eeuo pipefail
 
 readonly APP_NAME="Linuxroom Easy Nerd Fonts Installer"
-readonly APP_VERSION="1.0.0"
+readonly APP_VERSION="260918"
 readonly GITHUB_API="https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest"
 
 # sudo로 실행했을 경우 실제 사용자 계정에 설치
@@ -21,7 +21,7 @@ readonly FONT_DIR="${TARGET_HOME}/.local/share/fonts/NerdFonts"
 
 TEMP_DIR=""
 RELEASE_DATA=""
-RELEASE_VERSION=""
+RELEASE_VERSION=APP_VERSION
 
 cleanup() {
     if [[ -n ${TEMP_DIR} && -d ${TEMP_DIR} ]]; then
