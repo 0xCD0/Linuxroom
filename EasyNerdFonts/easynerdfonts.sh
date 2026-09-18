@@ -21,7 +21,7 @@ readonly FONT_DIR="${TARGET_HOME}/.local/share/fonts/NerdFonts"
 
 TEMP_DIR=""
 RELEASE_DATA=""
-RELEASE_VERSION=APP_VERSION
+RELEASE_VERSION="260918"
 
 cleanup() {
     if [[ -n ${TEMP_DIR} && -d ${TEMP_DIR} ]]; then
